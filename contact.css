@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Nova Round', cursive;
+    box-sizing: border-box;
+}
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 30px;
+}
+.navbar li a{
+    color: #fff;
+    padding: 17px;
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+
+}
+.card{
+    color: #fff;
+    background: transparent;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.card-icon{
+    font-size: 20px;
+    background-color: rgb(6, 6, 37);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    line-height:60px;
+    transition: 0.3s linear;
+}
+.card:hover .card-icon{
+    background: none;
+    color: dimgrey;
+    transform: scale(1.6);
+}
+.card p{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+.card:hover p{
+    opacity: 1;
+    max-height: 40px;
+}
+input,textarea{
+    width: 100%;
+    padding: 30px;
+    border: 5px solid;
+    font-size: 1rem;
+    background-color: transparent;
+    border-radius: 4px;
+}
+textarea{
+    width: 100%;
+    min-height: 10em;
+}
+.navbar ul{
+    margin-bottom: -10px;
+}
+fieldset {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    border: none;
+    min-width: 300px;
+  }
+  .row{
+    text-align: center;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    color: black;
+    min-width: 300px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+ label{
+    width: 200px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    color:#fff;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+ }
+
+ input#email{
+    text-transform: uppercase;
+ }
+ input#last-name{
+    text-transform: uppercase;
+ }
+ input#first-name{
+    text-transform: uppercase;
+ }
+ .row h1 {
+    color:#fff;
+    padding: 10px;
+ }
+ .row h4{
+    color:#fff;
+ }
+ input[type="submit"]:hover{
+    color: aqua;
+ }
